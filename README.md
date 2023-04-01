@@ -1,3 +1,5 @@
+This script was made with the help of chatGPT.
+
 # Speech to Text Transcription Tool
 
 This project is a Python script that uses Google Cloud services to transcribe audio files to text. 
