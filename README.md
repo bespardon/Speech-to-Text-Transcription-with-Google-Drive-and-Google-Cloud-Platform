@@ -41,7 +41,7 @@ Before using the tool, you need to set up a few things:
 
 If you encounter permission issues when running the script, make sure the service account has the necessary permissions to access the Google Cloud resources, such as Google Cloud Storage or the Speech-to-Text API.
 
-To resolve this issue you have to check both platforms: 
+To resolve this issue you have to check both **Google Drive** and **GCP** platforms: 
 
 ### 1. Google Drive
 1. Open your google drive account and navigate to the SOURCE and DESTINATION folders
