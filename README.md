@@ -36,7 +36,19 @@ Before using the tool, you need to set up a few things:
 
 If you encounter permission issues when running the script, make sure the service account has the necessary permissions to access the Google Cloud resources, such as Google Cloud Storage or the Speech-to-Text API.
 
-To resolve this issue, follow these steps:
+
+To resolve this issue you have to check both platforms: 
+
+### 1. Google Drive
+1. Open your google drive account and navigate to the SOURCE and DESTINATION folders
+2. Open permission settings and add the email from your SERVICE ACCOUNT to the access list
+
+here is how you can find one
+Go to GCP console and navigate to the IAM & Admin page.
+
+Locate the service account that corresponds to the JSON key file you are using in your code. The email address of the service account is usually in the format <account-name>@<project-id>.iam.gserviceaccount.com.
+
+### 2. GCP
 1. Go to the Google Cloud Console.
 2. Select your project from the top-left dropdown menu.
 3. Navigate to the IAM & Admin page.
@@ -46,11 +58,3 @@ To resolve this issue, follow these steps:
     * roles/storage.admin (or roles/storage.objectAdmin) to access Google Cloud Storage.
     * roles/speech.admin (or roles/speech.editor) to access Speech-to-Text API.
 7. Save the changes.
-
-
-
-
-
-
-
-
