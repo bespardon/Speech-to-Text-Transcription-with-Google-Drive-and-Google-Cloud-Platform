@@ -1,6 +1,11 @@
 # Speech to Text Transcription Tool
 
-This project is a Python script that uses Google Cloud services to transcribe audio files to text. The script downloads audio files from a specified Google Drive folder, converts them to the WAV format, uploads them to a specified Google Cloud Storage bucket, transcribes them using the Google Speech-to-Text API, and uploads the resulting text files to a specified Google Drive folder.
+This project is a Python script that uses Google Cloud services to transcribe audio files to text. 
+Everything you have to do is to add new m4a audio file to your google drive folder then open terminal and run the python file. Your transcription is ready in 1-3 minutes in your google drive destination folder.
+
+## How does it work
+
+The script downloads audio files from a specified Google Drive folder, converts them to the WAV format, uploads them to a specified Google Cloud Storage bucket, transcribes them using the Google Speech-to-Text API, and uploads the resulting text files to a specified Google Drive folder.
 
 ## How to use the tool
 
@@ -36,19 +41,18 @@ Before using the tool, you need to set up a few things:
 
 If you encounter permission issues when running the script, make sure the service account has the necessary permissions to access the Google Cloud resources, such as Google Cloud Storage or the Speech-to-Text API.
 
-
 To resolve this issue you have to check both platforms: 
 
 ### 1. Google Drive
 1. Open your google drive account and navigate to the SOURCE and DESTINATION folders
 2. Open permission settings and add the email from your SERVICE ACCOUNT to the access list
 
-here is how you can find one
-Go to GCP console and navigate to the IAM & Admin page.
-
-Locate the service account that corresponds to the JSON key file you are using in your code. The email address of the service account is usually in the format <account-name>@<project-id>.iam.gserviceaccount.com.
+Here is how you can find one
+- Go to GCP console and navigate to the IAM & Admin page.
+- Locate the service account that corresponds to the JSON key file you are using in your code. The email address of the service account is usually in the format <account-name>@<project-id>.iam.gserviceaccount.com.
 
 ### 2. GCP
+
 1. Go to the Google Cloud Console.
 2. Select your project from the top-left dropdown menu.
 3. Navigate to the IAM & Admin page.
